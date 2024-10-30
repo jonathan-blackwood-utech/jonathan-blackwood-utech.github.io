@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "style.css">
+	</head>
+	<body>
+		<header id = "topbar">
+			<img id = "logo" src = "Assets/logo.png">
+			<button id = "cart-button">
+				<img src = "Assets/cart.svg">
+			</button>
+		</header>
+		<div class = "container">
+			<nav class = "sidebar">
+				<form id = "filters">
+					<input type = "checkbox" value = "cpu" id = "cpu">
+					<label for = "cpu">Processors</label>
+					<br>
+					<input type = "checkbox" value = "gpu" id = "gpu">
+					<label for = "gpu">Graphics Cards</label>
+					<br>
+					<input type = "checkbox" value = "monitor" id = "monitor">
+					<label for = "monitor">Monitors</label>
+					<br>
+					<input type = "checkbox" value = "mouse" id = "mouse">
+					<label for = "mouse">Mice</label>
+					<br>
+					<input type = "checkbox" value = "keyboard" id = "keyboard">
+					<label for = "keyboard">Keyboards</label>
+					<br>
+					<input type = "checkbox" value = "laptop" id = "laptop">
+					<label for = "laptop">Laptops</label>
+					<br>
+					<input type = "checkbox" value = "desktop" id = "desktop">
+					<label for = "desktop">Desktops</label>
+					<br>
+					<input type = "checkbox" value = "hdd" id = "hdd">
+					<label for = "hdd">Hard Drives</label>
+					<br>
+					<input type = "checkbox" value = "ssd" id = "ssd">
+					<label for = "ssd">Solid State Drives</label>
+					<br>
+					<input type = "checkbox" value = "usb" id = "usb">
+					<label for = "usb">USB Flash Drives</label>
+					<br>
+					<input type="reset" value="Reset">
+				</form>
+			</nav>
+			
+			<main>
+				<h1 id = "filter-name"></h1>
+				<div id = "products">
+				</div>
+			</main>
+			
+			<div class = "sidebar" id = "cart">
+				<button>
+					<a href = "checkout.html">
+						Checkout
+					</a>
+				</button>
+			</div>
+		</div>
+		<script src = "filter.js"></script>
+		<script src = "catalog.js"></script>
+		<script src = "store.js"></script>
+	</body>
+</html>

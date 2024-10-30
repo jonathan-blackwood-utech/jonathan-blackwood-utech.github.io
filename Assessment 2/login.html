@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    </head>
+    <body>
+    	<header>
+    		<link rel = "stylesheet" href = "login.css">
+    		<link ref = "stylesheet" href = "style.css">
+    		<nav>
+    		</nav>
+    	</header>
+    	<main>
+    		<h1>attempts:</h1>
+    		<p id = "attempts"></p>
+    		<form id = "login" method = "post">
+    			<label for = "username">Username</label>
+    			<input id = "username" name = "username" type = "text" minlength = "0" required>
+    			<span id = "username-wrong" for = "username" style = "display: none">Username is empty</span>
+    			<label for = "password">Password</label>
+    			<input id = "password" type = "password" minlength = "8" required>
+    			<label id = "password-wrong" for = "password" style = "display: none">Password must be at least 8 characters long</label>
+    			<button type = "submit" value = "Login" style = "display: flex; justify-content: center; align-items: center; padding: 20px">
+    				<span>Login</span>
+    				<img src = "Assets/login.svg">
+    			</button>
+    		</form>
+    	</main>
+    </body>
+    <script src = "login.js"></script>
+</html>

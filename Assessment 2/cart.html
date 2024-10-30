@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<style>
+			body {
+				width: 100vw;
+				height: 100vh;
+			}
+			#cart {
+				position: fixed;
+				top: 0;
+				left: 80%;
+				width: 20%;
+				height: 100%;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<img src = "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQLL0VKBxr9IkeP6S-B3zv07-_7-5haUPAUUkc4LB7B2jKO2Phuca09TPJhaJN5iZy8PGoGcXRQPaUPvAg" width = "100%">
+		<div id = "cart">
+		</div>
+		<script>
+			for (element of document.querySelectorAll("*")) {
+				if (element.id != "cart") {
+					element.addEventListener("click", () => document.getElementById("cart").style.display = "none";);
+				}
+			}
+		</script>
+	</body>
+</html>

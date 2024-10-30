@@ -1,0 +1,21 @@
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 50%;
+	justify-content:
+}
+
+input:invalid  {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+#button:focus {
+  outline: 2px solid gray;
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,67 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#topbar {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: right;
+	background-color: lightblue;
+}
+
+#sidebar {
+	height: 100%;
+	width: 200px;
+	background-color: lightblue;
+}
+
+.container {
+	display: flex;
+}
+
+main {
+	width: 100%;
+}
+
+#products {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+}
+
+#product > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label:before {
+  	content: url("Assets/unchecked.svg");
+}
+
+input[type=checkbox]:checked + label:before {
+  	content: url("Assets/checked.svg");
+}
+
+#cart {
+	justify-content: center;
+	width: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	background: lightblue;
+}
+
+#cart > div {
+	display: flex;
+}

@@ -1,0 +1,48 @@
+<!DDOCTYPE html>
+<html>
+	<body>
+		<form>
+			<label>First Name</label>
+			<input id = "fname" name = "fname" type = "text" minlength = "1" required>
+			<label>Last name</label>
+			<input id = "lname" name = "lname" type = "text" minlength = "1" required>
+			<label>Email</label>
+			<input id = "email" name = "email" type = "email" required>
+			<label>Gift cardd expiry date</label>
+			<input id = "expdate" name = "expdate" type = "date" required>
+			<fieldset>
+				<legend>Currency</legend>
+				<label>JMD</label>
+				<input id = "jmd" name = "currency" type = "radio" value = "jmd" required>
+				<label>USD</label>
+				<input id = "usd" name = "currency" type = "radio" value = "usd" required>
+			</fieldset>
+			<select id = "merchant" name = "merchant">
+				<option value = "pricesmart">Pricesmart</option>
+				<option value = "kfc">KFC</option>
+				<option value = "lee">Lee's Food Fair</option>
+				<option value = "amazon">Amazon</option>
+				<option value = "shein">Shein</option>
+			</select>
+			<input id = "exrate" type = "text" disabled>
+			<label>Credit Card Number</label>
+			<input id = "card-number" type = "tel" pattern = "[0-9]{19}" autocomplete = "cc-number" placeholder = "0000-0000-0000-0000" maxlength = "19">
+			<input type = "reset">
+		</form>
+		
+		<script>
+			const fname = document.getElementById("fname");
+			const lname = document.getElementById("lname");
+			const email = document.getElementById("email");
+			
+			fname.addEventListener("focus", () => fname.disabled = true);
+			fname.addEventListener("blur", () => fname.disabled = false);
+			lname.addEventListener("focus", () => lname.disabled = true);
+			lname.addEventListener("blur", () => lname.disabled = false);
+			email.addEventListener("focus", () => {
+				alert("Example email: abc@email.com");
+				email.focus();
+			});
+		</script>
+	</body>
+</html>

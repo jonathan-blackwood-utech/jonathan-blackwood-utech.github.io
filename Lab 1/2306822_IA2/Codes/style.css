@@ -1,0 +1,194 @@
+* {
+  color: #3b4252;
+}
+
+body {
+    margin: 0;
+    padding: 0 5%;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    /*
+    background: url(https://w.wallhaven.cc/full/95/wallhaven-95yjm8.png);
+    background-repeat: repeat;
+    background: url(../Assets/background.png);
+    background-color: #d8dee9;
+    */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    overflow: hidden;
+}
+
+header {
+  width: 80%;
+  display: flex;
+  align-content: left;
+}
+
+.topnav {
+  height: 30px;
+  width: 100%;
+  padding: 2% 1%;
+  justify-content: center;
+}
+
+.topnav > a {
+	color: #4c566a;
+  align-items: center;
+  border-radius: 15px;
+  padding: 3% 2%;
+  text-decoration: none;
+	transition: padding 0.5s, background-color 0.5s, margin-left 0.5s, margin-right 0.5s;
+}
+
+.topnav > a.current-page > img {
+  background-color: #88c0d0;
+  border-radius: 10px;
+  /* transition: background-color 1s ease-out; */
+}
+
+.topnav > a.current-page:hover > img {
+  background-color: transparent;
+}
+
+.topnav > a:hover {
+	background-color: #81a1c1;
+	padding: 3% 3%;
+}
+
+.topnav > a > img {
+    width: 40px;
+    height: 40px;
+    padding: 8% 10%;
+}
+
+.topnav > a > h1 {
+  transform: translateX(-50%);
+  color: #eceff4;
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.3s ease, padding 0.3s;
+}
+
+.topnav > a:hover > h1 {
+  display: block;
+  color: #d8dee9;
+  transform: translateX(+0%);
+  opacity: 1;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding: 2% 10%;
+    border-radius: 40px 40px 0 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: solid #88c0d0;
+}
+
+section {
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.horz {
+  display: flex;
+  flex-direction: row;
+}
+
+.vert {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e3440;
+  font-size: 20px;
+}
+
+.sectiontitle {
+  width: 300px;
+  color: #3b4252;
+  padding-bottom: 5%;
+  border-bottom: solid 2px #5e81ac;
+}
+
+p {
+  border-left: solid 2px #5e81ac;
+  padding-left: 20px;
+}
+
+.grid {
+    display: grid; gap: 5%; grid-template-columns: 500px 500px; justify-content: center;
+}
+
+.ref {
+  border: solid 2px #5e81ac;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-link {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #88c0d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button-link > h3 {
+  transition: color 0.3s;
+}
+
+.button-link > img {
+  height: 20px;
+}
+
+.button-link:hover {
+  background-color: #4c566a;
+  box-shadow: 2px 2px 10px gray;
+}
+
+.button-link:hover > h3 {
+  color: #d8dee9;
+}
+
+embed {
+  border-radius: 20px;
+}
+
+span {
+  background-color: #e5e9f0;
+  color: #3b4252;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.resume-list > * {
+  display: flex;
+  font-size: 20px;
+}
+
+.lang {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
